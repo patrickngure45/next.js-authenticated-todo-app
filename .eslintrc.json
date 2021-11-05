@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "rules": {
+    "extends": "next/core-web-vitals"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*-test.js",
+        "*.spec.js"
+      ],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
 }
