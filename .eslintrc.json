@@ -1,6 +1,6 @@
 {
   "rules": {
-    "extends": "2",
+    "extends": "warn",
   
   "overrides": [
     {
