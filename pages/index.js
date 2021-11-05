@@ -14,7 +14,7 @@ export default function Home({ initialTodos }) {
 
   useEffect(() => {
     setTodos(initialTodos);
-  }, []);
+  }, [initialTodos, setTodos]);
   return (
     <div>
       <Head>
