@@ -31,20 +31,18 @@ const Navbar = () => {
       </div>
       <div className="flex">
         {!user ? (
-          <a
-            href="/api/auth/login"
-            className="rounded bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 flex items-center"
-          >
-            Log in
-          </a>
+          <Link href="/api/auth/login">
+            <a className="rounded bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 flex items-center">
+              Log in
+            </a>
+          </Link>
         ) : (
           <div>
-            <a
-              href="/api/auth/logout"
-              className="rounded  bg-blue-500 hover:bg-blue-600  text-white py-1 px-2 flex items-center "
-            >
-              Logout
-            </a>
+            <Link href="/api/auth/logout">
+              <a className="rounded  bg-blue-500 hover:bg-blue-600  text-white py-1 px-2 flex items-center ">
+                Logout
+              </a>
+            </Link>
           </div>
         )}
       </div>
